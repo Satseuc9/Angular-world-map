@@ -1,0 +1,139 @@
+/* Import the Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap; 
+    margin: 5%;
+    max-width: 100%;
+    padding: 2%;
+    background-color: #f4f4f9;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3f51b5; 
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 500;
+    text-align: center;
+    flex: 1;
+
+}
+
+header h4 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    color: white; 
+    text-align: right;
+}
+.country-details {
+    background-color: #ffffff; 
+    border-radius: 8px;
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20px; 
+}
+
+.country-details h3 {
+    text-align: center;
+    color: #3f51b5;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 1.5rem; 
+}
+
+.country-details ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.country-details li {
+    padding: 5px 0; 
+    font-weight: 400; 
+}
+
+
+.map {
+    width: 65%;
+    padding: 10px;
+    border: 2px solid #e0e0e0; 
+    border-radius: 8px; 
+    background-color: white; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Hover effect for SVG paths */
+path:hover {
+    fill: #3f51b5; 
+    stroke: #283593;
+
+}
+
+
+footer {
+    background-color: #3f51b5; 
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #e0e0e0; 
+    font-weight: 400; 
+}
+
+/* Responsive design adjustments */
+@media (max-width: 1024px) {
+    .country-details {
+        width: 35%; 
+    }
+
+    .map {
+        width: 60%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .country-details {
+        width: 40%; 
+    }
+
+    .map {
+        width: 55%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .country-details {
+        width: 45%; 
+    }
+
+    
+    .map {
+        width: 50%; 
+    }
+}
