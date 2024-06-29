@@ -5,12 +5,12 @@
         "src": "angular.json",
         "use": "@vercel/static-build",
         "config": {
-          "distDir": "dist"
+          "distDir": "dist/angular-world-map"
         }
       }
     ],
     "routes": [
-      { "src": "/(.*)", "dest": "/index.html" }
+      { "src": "/(.*)", "dest": "/dist/angular-world-map/index.html" }
     ]
   }
   
